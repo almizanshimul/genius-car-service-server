@@ -74,6 +74,9 @@ run().catch(console.dir)
 app.get('/', (req, res) => {
     res.send('Running Genius Server')
 })
+app.get('/hero', (req, res) => {
+    res.send('Add Hero api')
+})
 
 app.listen(port, () => {
     console.log('Listening port: ', port);
